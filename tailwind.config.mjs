@@ -7,7 +7,7 @@ export default {
 		primaryGreen:"#1C4835",
 		secondaryGreen:"#208459",
 		lightGreen:"#9FBCAD",
-        blackish: "#191919",
+        mintGreen: "#EAF1E6",
         blackishV2: "#1f1f1f",
         yellowish: "#F5F2E1",
         greyish: "#979592",
