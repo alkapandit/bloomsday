@@ -1,19 +1,19 @@
 ---
-import BloomsdayArtAndScience from "./BloomsdayArtAndScience.jsx";
-import BloomsdayProduct from "./BloomsdayProduct.astro";
-import BloomsdayHeader from "./BloomsdayHeader.astro";
-import BloomsdayMain from "./BloomsdayMain.astro";
-import BloomsdayHomeMgmt from "./BloomsdayHomeMgmt.astro";
+import ArtAndScience from "./ArtAndScience.jsx";
+import Product from "./Product.astro";
+import Header from "./Header.astro";
+import Main from "./Main.astro";
+import HomeMgmt from "./HomeMgmt.astro";
 import Agents from "./Agents.astro";
 import Footer from "./Footer.jsx";
 ---
 
 <div>
-  <BloomsdayHeader />
-  <BloomsdayMain />
-  <BloomsdayArtAndScience />
-  <BloomsdayProduct/>
-  <BloomsdayHomeMgmt/>
+  <Header />
+  <Main />
+  <ArtAndScience client:only=”react”/>
+  <Product/>
+  <HomeMgmt/>
   <Agents/>
   <Footer/>
 </div>

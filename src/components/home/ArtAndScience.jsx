@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.css"
 
 function BloomsdayArtAndScience() {
   const [data, setData] = useState(0);
@@ -15,14 +16,13 @@ function BloomsdayArtAndScience() {
             </h3>
           </div>
           <div class="flex items-center">
-            <div class="w-1/2">
-              <div>
+            <div class="w-1/2 font-neueMontreal px-5">
+              <div class="">
                 {data !== 1 && (
                   <div
-                    class="flex items-center justify-between cursor-pointer"
+                    class="flex items-center justify-between cursor-pointer p-5 my-5 rounded-md  myshadow font-semibold text-primaryGreen"
                     onClick={() => {
                       setData(1);
-                    //   console.log("fghjk----------------")
                     }}
                   >
                     <span>First Steps</span>{" "}
@@ -30,15 +30,85 @@ function BloomsdayArtAndScience() {
                   </div>
                 )}
                 {data === 1 && (
-                  <div>
+                  <div class="rounded-md myshadow py-4 px-5">
                     <div>
                       <div
-                        class="flex items-center justify-between cursor-pointer"
+                        class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen"
                         onClick={() => {
                           setData(0);
                         }}
                       >
                         <span>First Steps</span>{" "}
+                        <img src="/assets/CloseArrowIcon.svg" />
+                      </div>
+                      <div class="">
+                        Bloomsday Home is here to help you avoid unexpected
+                        hurdles by offering a 5-step home-buying checklist and
+                        effortless document management to keep you organized and
+                        on top of all the essential paperwork, ensuring a smooth
+                        homebuying experience.
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+              <div class="">
+                {data !== 2 && (
+                  <div
+                    class="flex items-center justify-between cursor-pointer p-5 my-5 myshadow rounded-md font-semibold text-primaryGreen"
+                    onClick={() => {
+                      setData(2);
+                    }}
+                  >
+                    <span>Along The Path</span>{" "}
+                    <img src="/assets/CloseArrowIcon.svg" />
+                  </div>
+                )}
+                {data === 2 && (
+                  <div class="rounded-md myshadow py-4 px-5">
+                    <div>
+                      <div
+                        class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen "
+                        onClick={() => {
+                          setData(0);
+                        }}
+                      >
+                        <span>Along The Path</span>{" "}
+                        <img src="/assets/CloseArrowIcon.svg" />
+                      </div>
+                      <div>
+                        Bloomsday Home is here to help you avoid unexpected
+                        hurdles by offering a 5-step home-buying checklist and
+                        effortless document management to keep you organized and
+                        on top of all the essential paperwork, ensuring a smooth
+                        homebuying experience.
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+              <div class="">
+                {data !== 3 && (
+                  <div
+                    class="flex items-center justify-between cursor-pointer p-5 my-5 myshadow rounded-md font-semibold text-primaryGreen"
+                    onClick={() => {
+                      setData(3);
+                    }}
+                  >
+                    <span>Setting In</span>{" "}
+                    <img src="/assets/CloseArrowIcon.svg" />
+                  </div>
+                )}
+                {data === 3 && (
+                  <div class="rounded-md myshadow py-4 px-5">
+                    <div>
+                      <div
+                        class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen "
+                        onClick={() => {
+                          setData(0);
+                        }}
+                      >
+                        <span>Setting In</span>{" "}
                         <img src="/assets/CloseArrowIcon.svg" />
                       </div>
                       <div>
