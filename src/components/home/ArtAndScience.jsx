@@ -26,7 +26,7 @@ function BloomsdayArtAndScience() {
                     }}
                   >
                     <span>First Steps</span>{" "}
-                    <img src="/assets/CloseArrowIcon.svg" />
+                    <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
                   </div>
                 )}
                 {data === 1 && (
@@ -39,7 +39,7 @@ function BloomsdayArtAndScience() {
                         }}
                       >
                         <span>First Steps</span>{" "}
-                        <img src="/assets/CloseArrowIcon.svg" />
+                        <img src="/assets/CloseArrowIcon.svg"  alt="CloseArrowIcon"/>
                       </div>
                       <div class="">
                         Bloomsday Home is here to help you avoid unexpected
@@ -61,7 +61,7 @@ function BloomsdayArtAndScience() {
                     }}
                   >
                     <span>Along The Path</span>{" "}
-                    <img src="/assets/CloseArrowIcon.svg" />
+                    <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
                   </div>
                 )}
                 {data === 2 && (
@@ -74,7 +74,7 @@ function BloomsdayArtAndScience() {
                         }}
                       >
                         <span>Along The Path</span>{" "}
-                        <img src="/assets/CloseArrowIcon.svg" />
+                        <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
                       </div>
                       <div>
                         Bloomsday Home is here to help you avoid unexpected
@@ -96,7 +96,7 @@ function BloomsdayArtAndScience() {
                     }}
                   >
                     <span>Setting In</span>{" "}
-                    <img src="/assets/CloseArrowIcon.svg" />
+                    <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
                   </div>
                 )}
                 {data === 3 && (
@@ -109,7 +109,7 @@ function BloomsdayArtAndScience() {
                         }}
                       >
                         <span>Setting In</span>{" "}
-                        <img src="/assets/CloseArrowIcon.svg" />
+                        <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
                       </div>
                       <div>
                         Bloomsday Home is here to help you avoid unexpected
@@ -136,6 +136,7 @@ function BloomsdayArtAndScience() {
                     <img
                       src="/assets/ArrowIcon.svg"
                       class="absolute -right-5 top-14"
+                      alt="ArrowIcon" 
                     />
                   </div>
                   <div class="bg-mintGreen w-[30%] m-4 p-5 rounded-md relative">
@@ -148,6 +149,7 @@ function BloomsdayArtAndScience() {
                     <img
                       src="/assets/ArrowIcon.svg"
                       class="absolute -right-5 top-14"
+                      alt="ArrowIcon" 
                     />
                   </div>
                   <div class="bg-mintGreen w-[30%] m-4 p-5 rounded-md">
@@ -170,6 +172,7 @@ function BloomsdayArtAndScience() {
                     <img
                       src="/assets/ArrowIcon.svg"
                       class="absolute -right-5 top-14"
+                      alt="ArrowIcon"
                     />
                   </div>
                   <div class="bg-mintGreen w-[30%] m-4 p-5 rounded-md relative">
@@ -181,6 +184,7 @@ function BloomsdayArtAndScience() {
                     <img
                       src="/assets/ArrowIcon.svg"
                       class="absolute -right-5 top-14"
+                      alt="ArrowIcon"
                     />
                   </div>
                   <div class="bg-[#FAEFC6] w-[30%] m-4 p-5 rounded-md">
