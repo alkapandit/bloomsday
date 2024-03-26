@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./style.css"
+import "./style.css";
 
 function BloomsdayArtAndScience() {
-  const [data, setData] = useState(0);
+  const [data, setData] = useState(1);
   return (
     <div>
       <div class="flex items-center justify-center mt-14">
-        <div class="w-3/4">
+        <div class="w-3/4 px-5">
           <div class="text-center">
             <p class="py-5 text-sm font-medium font-breeSerif">
               Embrace Organizational Bliss
@@ -15,38 +15,42 @@ function BloomsdayArtAndScience() {
               Master the Art and Science of Homebuying
             </h3>
           </div>
-          <div class="flex items-center">
-            <div class="w-1/2 font-neueMontreal px-5">
-              <div class="">
+          <div class="flex items-center justify-between mt-8">
+            <div class="w-1/2 font-neueMontreal p-2">
+              <div >
                 {data !== 1 && (
                   <div
-                    class="flex items-center justify-between cursor-pointer p-5 my-5 rounded-md  myshadow font-semibold text-primaryGreen"
+                    class="flex items-center justify-between cursor-pointer p-5 my-4 rounded-md  myshadow font-semibold text-primaryGreen"
                     onClick={() => {
                       setData(1);
                     }}
                   >
                     <span>First Steps</span>{" "}
-                    <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
+                    <img
+                      src="/assets/CloseArrowIcon.svg"
+                      alt="CloseArrowIcon"
+                    />
                   </div>
                 )}
                 {data === 1 && (
-                  <div class="rounded-md myshadow py-4 px-5">
+                  <div class="rounded-md myshadow py-5 px-5 ">
                     <div>
                       <div
                         class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen"
-                        onClick={() => {
-                          setData(0);
-                        }}
+                       
                       >
                         <span>First Steps</span>{" "}
-                        <img src="/assets/CloseArrowIcon.svg"  alt="CloseArrowIcon"/>
+                        <img
+                          src="/assets/CloseArrowIcon.svg"
+                          alt="CloseArrowIcon"
+                        />
                       </div>
-                      <div class="">
-                        Bloomsday Home is here to help you avoid unexpected
-                        hurdles by offering a 5-step home-buying checklist and
-                        effortless document management to keep you organized and
-                        on top of all the essential paperwork, ensuring a smooth
-                        homebuying experience.
+                      <div class="pe-10 py-3">
+                        Bloomsday Home transforms the dream of homeownership
+                        into a serene reality by providing clarity, education,
+                        and organization before you embark on your home journey.
+                        Understanding the process dispels stress, enabling you
+                        to approach your experience with a focused mindset.
                       </div>
                     </div>
                   </div>
@@ -55,28 +59,32 @@ function BloomsdayArtAndScience() {
               <div class="">
                 {data !== 2 && (
                   <div
-                    class="flex items-center justify-between cursor-pointer p-5 my-5 myshadow rounded-md font-semibold text-primaryGreen"
+                    class="flex items-center justify-between cursor-pointer p-5 my-4 myshadow rounded-md font-semibold text-primaryGreen"
                     onClick={() => {
                       setData(2);
                     }}
                   >
                     <span>Along The Path</span>{" "}
-                    <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
+                    <img
+                      src="/assets/CloseArrowIcon.svg"
+                      alt="CloseArrowIcon"
+                    />
                   </div>
                 )}
                 {data === 2 && (
-                  <div class="rounded-md myshadow py-4 px-5">
+                  <div class="rounded-md myshadow py-5 px-5">
                     <div>
                       <div
                         class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen "
-                        onClick={() => {
-                          setData(0);
-                        }}
+                       
                       >
                         <span>Along The Path</span>{" "}
-                        <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
+                        <img
+                          src="/assets/CloseArrowIcon.svg"
+                          alt="CloseArrowIcon"
+                        />
                       </div>
-                      <div>
+                      <div class="pe-10 py-4">
                         Bloomsday Home is here to help you avoid unexpected
                         hurdles by offering a 5-step home-buying checklist and
                         effortless document management to keep you organized and
@@ -90,112 +98,47 @@ function BloomsdayArtAndScience() {
               <div class="">
                 {data !== 3 && (
                   <div
-                    class="flex items-center justify-between cursor-pointer p-5 my-5 myshadow rounded-md font-semibold text-primaryGreen"
+                    class="flex items-center justify-between cursor-pointer p-5 my-4 myshadow rounded-md font-semibold text-primaryGreen"
                     onClick={() => {
                       setData(3);
                     }}
                   >
                     <span>Setting In</span>{" "}
-                    <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
+                    <img
+                      src="/assets/CloseArrowIcon.svg"
+                      alt="CloseArrowIcon"
+                    />
                   </div>
                 )}
                 {data === 3 && (
-                  <div class="rounded-md myshadow py-4 px-5">
+                  <div class="rounded-md myshadow py-5 px-5">
                     <div>
                       <div
                         class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen "
-                        onClick={() => {
-                          setData(0);
-                        }}
+                       
                       >
                         <span>Setting In</span>{" "}
-                        <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
+                        <img
+                          src="/assets/CloseArrowIcon.svg"
+                          alt="CloseArrowIcon"
+                        />
                       </div>
-                      <div>
-                        Bloomsday Home is here to help you avoid unexpected
-                        hurdles by offering a 5-step home-buying checklist and
-                        effortless document management to keep you organized and
-                        on top of all the essential paperwork, ensuring a smooth
-                        homebuying experience.
+                      <div class="pe-5 py-4">
+                        Bloomsday Home’s commitment extends beyond your move-in
+                        date. Our secure document management system create a
+                        personalized hub for managing your home's on-going
+                        records and essential documents keeping your home
+                        management in one secure place.
                       </div>
                     </div>
                   </div>
                 )}
               </div>
             </div>
-            <div class="w-1/2 bg-primaryGreen m-7 text-primaryGreen">
-              <div class="flex items-center justify-center flex-col p-5">
-                <div class="flex w-full items-center justify-center">
-                  <div class="bg-mintGreen w-[30%] m-4 p-5 rounded-md relative">
-                    <span class="font-breeSerif text-[#456A58]">Step 1</span>
-                    <p class="font-medium text-xl font-neueMontreal">
-                      Get
-                      <br />
-                      Approved
-                    </p>
-                    <img
-                      src="/assets/ArrowIcon.svg"
-                      class="absolute -right-5 top-14"
-                      alt="ArrowIcon" 
-                    />
-                  </div>
-                  <div class="bg-mintGreen w-[30%] m-4 p-5 rounded-md relative">
-                    <span class="font-breeSerif text-[#456A58]">Step 2</span>
-                    <p class="font-medium text-xl font-neueMontreal">
-                      Make an
-                      <br />
-                      Offer
-                    </p>
-                    <img
-                      src="/assets/ArrowIcon.svg"
-                      class="absolute -right-5 top-14"
-                      alt="ArrowIcon" 
-                    />
-                  </div>
-                  <div class="bg-mintGreen w-[30%] m-4 p-5 rounded-md">
-                    <span class="font-breeSerif text-[#456A58]">Step 3</span>
-                    <p class="font-medium text-xl font-neueMontreal">
-                      Esrow
-                      <br />
-                      Funds
-                    </p>
-                  </div>
-                </div>
-                <div class="flex w-full items-center justify-center">
-                  <div class="bg-mintGreen w-[30%] m-4 p-5 rounded-md relative">
-                    <span class="font-breeSerif text-[#456A58]">Step 4</span>
-                    <p class="font-medium text-xl font-neueMontreal">
-                      Complete
-                      <br />
-                      Sate
-                    </p>
-                    <img
-                      src="/assets/ArrowIcon.svg"
-                      class="absolute -right-5 top-14"
-                      alt="ArrowIcon"
-                    />
-                  </div>
-                  <div class="bg-mintGreen w-[30%] m-4 p-5 rounded-md relative">
-                    <span class="font-breeSerif text-[#456A58]">Step 5</span>
-                    <p class="font-medium text-xl font-neueMontreal">
-                      Moving <br />
-                      In
-                    </p>
-                    <img
-                      src="/assets/ArrowIcon.svg"
-                      class="absolute -right-5 top-14"
-                      alt="ArrowIcon"
-                    />
-                  </div>
-                  <div class="bg-[#FAEFC6] w-[30%] m-4 p-5 rounded-md">
-                    <p class="font-medium text-xl font-neueMontreal my-3">
-                      Welcome
-                      <br />
-                      Home!
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div class="w-2/4 px-2 ">
+              {data === 1 && <img src="/assets/First-Steps-Image.png" />}
+              {data === 2 && <img src="/assets/Along-the-Path-Image.png" />}
+              {data === 3 && <img src="/assets/Settling-In-Image.png" />}
             </div>
           </div>
         </div>
