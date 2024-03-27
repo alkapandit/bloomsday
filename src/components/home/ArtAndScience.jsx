@@ -17,7 +17,7 @@ function BloomsdayArtAndScience() {
           </div>
           <div class="flex items-center justify-between mt-8">
             <div class="w-1/2 font-neueMontreal p-2">
-              <div >
+              <div>
                 {data !== 1 && (
                   <div
                     class="flex items-center justify-between cursor-pointer p-5 my-4 rounded-md  myshadow font-semibold text-primaryGreen"
@@ -35,10 +35,7 @@ function BloomsdayArtAndScience() {
                 {data === 1 && (
                   <div class="rounded-md myshadow py-5 px-5 ">
                     <div>
-                      <div
-                        class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen"
-                       
-                      >
+                      <div class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen">
                         <span>First Steps</span>{" "}
                         <img
                           src="/assets/CloseArrowIcon.svg"
@@ -74,10 +71,7 @@ function BloomsdayArtAndScience() {
                 {data === 2 && (
                   <div class="rounded-md myshadow py-5 px-5">
                     <div>
-                      <div
-                        class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen "
-                       
-                      >
+                      <div class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen ">
                         <span>Along The Path</span>{" "}
                         <img
                           src="/assets/CloseArrowIcon.svg"
@@ -113,10 +107,7 @@ function BloomsdayArtAndScience() {
                 {data === 3 && (
                   <div class="rounded-md myshadow py-5 px-5">
                     <div>
-                      <div
-                        class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen "
-                       
-                      >
+                      <div class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen ">
                         <span>Setting In</span>{" "}
                         <img
                           src="/assets/CloseArrowIcon.svg"
@@ -136,9 +127,24 @@ function BloomsdayArtAndScience() {
               </div>
             </div>
             <div class="w-2/4 px-2 ">
-              {data === 1 && <img src="/assets/First-Steps-Image.png" />}
-              {data === 2 && <img src="/assets/Along-the-Path-Image.png" />}
-              {data === 3 && <img src="/assets/Settling-In-Image.png" />}
+              {data === 1 && (
+                <img
+                  src="/assets/First-Steps-Image.png"
+                  alt="First-Steps-Image"
+                />
+              )}
+              {data === 2 && (
+                <img
+                  src="/assets/Along-the-Path-Image.png"
+                  alt="Along-the-Path-Image"
+                />
+              )}
+              {data === 3 && (
+                <img
+                  src="/assets/Settling-In-Image.png"
+                  alt="Settling-In-Image"
+                />
+              )}
             </div>
           </div>
         </div>
