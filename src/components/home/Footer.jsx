@@ -5,12 +5,7 @@ import SubscribePopup from "./SubscribePopup";
 function Footer() {
   const [waitlist, setWaitlist] = useState(false);
   const [subscribe, setSubscribe] = useState(false);
-  const addWaitlist = () => {
-    setWaitlist(true);
-  };
-  const doSubscribe = () => {
-    setSubscribe(true);
-  };
+
   return (
     <>
       <div class="font-neueMontreal" id="joinWaitlist">
@@ -73,7 +68,10 @@ function Footer() {
               <button
                 type="submit"
                 class="bg-primaryGreen rounded-md text-white font-medium py-2 px-8 mt-5"
-                onClick={addWaitlist}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setWaitlist(true);
+                }}
               >
                 Submit
               </button>
@@ -124,7 +122,9 @@ function Footer() {
                   />
                   <button
                     class="bg-yellowish text-primaryGreen py-2 px-5 rounded-md"
-                    onClick={doSubscribe}
+                    onClick={() => {
+                      setSubscribe(true);
+                    }}
                   >
                     Subscribe
                   </button>
@@ -158,8 +158,8 @@ function Footer() {
           </div>
         </div>
       </div>
-      {waitlist && <WaitlistPopup setWaitlist={setWaitlist}/>}
-      {subscribe && <SubscribePopup setSubscribe={setSubscribe}/>}
+      {waitlist && <WaitlistPopup setWaitlist={setWaitlist} />}
+      {subscribe && <SubscribePopup setSubscribe={setSubscribe} />}
     </>
   );
 }
