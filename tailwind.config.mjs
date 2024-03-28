@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         primaryGreen: "#1C4835",
+        textColor: "#1C4835",
         secondaryGreen: "#208459",
         lightGreen: "#9FBCAD",
         mintGreen: "#EAF1E6",
