@@ -1,4 +1,7 @@
 ---
+import Footer from '../components/home/Footer';
+import Header from '../components/home/Header.astro';
+
 interface Props {
 	title: string;
 }
@@ -17,6 +20,8 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+		<Header/>
 		<slot />
+		<Footer client:only=”react”/>
 	</body>
 </html>

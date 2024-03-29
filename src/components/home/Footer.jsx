@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-import WaitlistPopup from "./WaitlistPopup";
 import SubscribePopup from "./SubscribePopup";
 
 function Footer() {
-  const [waitlist, setWaitlist] = useState(false);
   const [subscribe, setSubscribe] = useState(false);
 
   return (
     <>
       <div class="font-neueMontreal" id="joinWaitlist">
-        <div class="bg-yellowish flex items-center justify-center">
+        {/* <div class="bg-yellowish flex items-center justify-center">
           <div class="w-3/4  py-10 flex justify-between ">
             <div class="w-full">
               <div>
@@ -77,7 +75,7 @@ function Footer() {
               </button>
             </form>
           </div>
-        </div>
+        </div> */}
         <div class="py-20 bg-primaryGreen">
           <div class=" flex justify-center ">
             <div class="w-[88%] text-white  ">
@@ -140,8 +138,8 @@ function Footer() {
             <div class="w-[88%] text-yellowish flex justify-between ">
               <div class=" w-2/4">
                 <div class="pb-4">
-                  <span class="me-8 underline ">Privacy</span>
-                  <span class="underline">Terms</span>
+                  <span class="me-8 underline "><a href="/privacy">Privacy</a></span>
+                  <span class="underline"><a href="/terms" >Terms</a></span>
                 </div>
                 <p class="font-normal text-xs font-neueMontrea pe-[5.4rem] tracking-wide">
                   Bloomsday Home’s website and platform offer the services of
@@ -158,7 +156,6 @@ function Footer() {
           </div>
         </div>
       </div>
-      {waitlist && <WaitlistPopup setWaitlist={setWaitlist} />}
       {subscribe && <SubscribePopup setSubscribe={setSubscribe} />}
     </>
   );

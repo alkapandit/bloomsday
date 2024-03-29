@@ -1,21 +1,19 @@
 ---
 import ArtAndScience from "./ArtAndScience.jsx";
 import Product from "./Product.astro";
-import Header from "./Header.astro";
 import Main from "./Main.astro";
 import HomeMgmt from "./HomeMgmt.astro";
 import Agents from "./Agents.astro";
-import Footer from "./Footer.jsx";
 import JoinCommunity from "./JoinCommunity.astro";
+import JoinWaitlist from "./JoinWaitlist";
 ---
 
 <div>
-  <Header />
   <Main />
   <ArtAndScience client:only=”react”/>
   <Product/>
   <HomeMgmt/>
   <Agents/>
   <JoinCommunity/>
-  <Footer client:only=”react”/>
+  <JoinWaitlist client:only=”react”/>
 </div>
