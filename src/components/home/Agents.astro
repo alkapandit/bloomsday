@@ -1,13 +1,27 @@
+---
+import { Image } from "astro:assets";
+import Frame6 from "../../images/Frame6.png";
+---
+
 <div class="flex items-center justify-center mt-28">
-  <div class="w-3/4 grid grid-cols-8 bg-gradient-to-r from-primaryGreen from-75% to-white to-75%">
-    <div class="text-yellowish p-14 mt-10 col-span-5 flex flex-col justify-center">
-      <span class="font-medium text-sm font-breeSerif">Delight Your Clients</span>
-      <h3 class="font-normal font-neueMontreal text-3xl my-5">Added Value for Forever Clients</h3>
+  <div
+    class="w-3/4 grid grid-cols-8 bg-gradient-to-r from-primaryGreen from-75% to-white to-75%"
+  >
+    <div
+      class="text-yellowish p-14 mt-10 col-span-5 flex flex-col justify-center"
+    >
+      <span class="font-medium text-sm font-breeSerif"
+        >Delight Your Clients</span
+      >
+      <h3 class="font-normal font-neueMontreal text-3xl my-5">
+        Added Value for Forever Clients
+      </h3>
       <p class="font-neueMontreal pe-10 font-normal tracking-wide">
-        Bloomsday partners with likeminded agents to provide a white glove service to their valued
-        clients. Our client-facing platform is intended to supplement, not replace, agents’ internal
-        software, so there is no switching cost. Contact us to discuss cobranding opportunities and
-        other ways we can help you deliver a superior experience to your clients.
+        Bloomsday partners with likeminded agents to provide a white glove
+        service to their valued clients. Our client-facing platform is intended
+        to supplement, not replace, agents’ internal software, so there is no
+        switching cost. Contact us to discuss cobranding opportunities and other
+        ways we can help you deliver a superior experience to your clients.
       </p>
       <a
         href="mailto:agents@bloomsdayhome.com?subject=Agent Inquiry"
@@ -16,8 +30,8 @@
       >
     </div>
     <div class="col-span-3 relative">
-      <img
-        src="/assets/Frame6.png"
+      <Image
+        src={Frame6}
         alt="Frame6"
         class="w-full h-full object-cover object-top -translate-y-[15%] absolute top-0 left-0"
       />

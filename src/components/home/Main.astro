@@ -1,9 +1,12 @@
+---
+import { Image } from "astro:assets";
+import Rectangle19 from "../../images/Rectangle19.png";
+---
+
 <div class="bg-yellowish flex items-center flex-col" id="hero">
   <div class="w-3/4 text-center pt-20">
     <div class="flex flex-col">
-      <p class=" pb-7 font-breeSerif">
-        Coming Soon: The Future of Homebuying
-      </p>
+      <p class="pb-7 font-breeSerif">Coming Soon: The Future of Homebuying</p>
       <h3 class="font-normal text-6xl text-primaryGreen pb-2 font-neueMontreal">
         A Simpler Path to Homebuying
       </h3>
@@ -22,30 +25,40 @@
     </div>
   </div>
 </div>
-<div class="flex justify-center home-image-container ">
+<div class="flex justify-center home-image-container">
   <div class="relative flex justify-center">
-    <img src="/assets/Rectangle19.png" alt="home img" class="w-[65%]" />
+    <Image src={Rectangle19} alt="home img" class="w-[65%]" />
     <div
       class="absolute top-20 left-40 bg-white flex items-center py-2 px-0 text-xs text-primaryGreen font-medium font-neueMontreal"
     >
       <div class="mx-4">
-        <img class="m-auto" src="/assets/TaskIcon.svg" alt="TaskIcon"/><p>Tasks</p>
+        <img class="m-auto" src="/assets/TaskIcon.svg" alt="TaskIcon" /><p>
+          Tasks
+        </p>
       </div>
       <div class="mx-4">
-        <img class="m-auto" src="/assets/DocumentIcon.svg" alt="DocumentIcon"/><p>Documents</p>
+        <img
+          class="m-auto"
+          src="/assets/DocumentIcon.svg"
+          alt="DocumentIcon"
+        /><p>Documents</p>
       </div>
       <div class="mx-4">
-        <img class="m-auto" src="/assets/NotesIcon.svg" alt="NotesIcon"/><p>Notes</p>
+        <img class="m-auto" src="/assets/NotesIcon.svg" alt="NotesIcon" /><p>
+          Notes
+        </p>
       </div>
       <div class="mx-4">
-        <img class="m-auto" src="/assets/PhotosIcon.svg" alt="PhotosIcon"/><p>Photos</p>
+        <img class="m-auto" src="/assets/PhotosIcon.svg" alt="PhotosIcon" /><p>
+          Photos
+        </p>
       </div>
     </div>
     <div
-      class="bg-[#F8F5F1] w-fit p-4 absolute top-52 left-96 font-neueMontreal "
+      class="bg-[#F8F5F1] w-fit p-4 absolute top-52 left-96 font-neueMontreal"
     >
       <div class="flex items-center mt-2 mb-4">
-        <img src="/assets/ReportIcon.svg" alt="ReportIcon"/><span
+        <img src="/assets/ReportIcon.svg" alt="ReportIcon" /><span
           class="ps-3 font-bold text-primaryGreen text-xl">Reports</span
         >
       </div>
@@ -56,11 +69,11 @@
             <span class="ms-3 font-medium text-sm">Credit Reports</span>
           </div>
           <div class="flex items-center">
-            <img src="/assets/CheckboxIcon.svg" alt="CheckboxIcon"  />
+            <img src="/assets/CheckboxIcon.svg" alt="CheckboxIcon" />
             <span class="ms-3 font-medium text-sm">Pre-Approval Letter</span>
           </div>
           <div class="flex items-center">
-            <img src="/assets/CheckboxIcon.svg" alt="CheckboxIcon"  />
+            <img src="/assets/CheckboxIcon.svg" alt="CheckboxIcon" />
             <span class="ms-3 font-medium text-sm">Loan Estimate</span>
           </div>
         </div>
@@ -76,7 +89,7 @@
       <div class="bg-white py-1 px-2 border-s-4 border-s-secondaryGreen">
         <div class="flex items-center justify-between">
           <div class="flex items-end">
-            <img src="/assets/RightClickIcon.svg" alt="RightClickIcon"  /><span
+            <img src="/assets/RightClickIcon.svg" alt="RightClickIcon" /><span
               class="font-medium text-xs text-primaryGreen">Assets</span
             >
           </div>
@@ -87,12 +100,21 @@
             Brokerage Statement
           </p><button
             class="bg-[#CBEFDF] text-sm text-primaryGreen font-medium rounded-lg py-2 px-5"
-            >Completed</button>
+            >Completed</button
+          >
         </div>
         <div class="flex items-center justify-between py-3">
           <div class="flex items-center">
-            <img src="/assets/SpectacleIcon.svg" class="me-3" alt="SpectacleIcon" />
-            <img src="/assets/DownloadIcon.svg" class="me-3" alt="DownloadIcon" />
+            <img
+              src="/assets/SpectacleIcon.svg"
+              class="me-3"
+              alt="SpectacleIcon"
+            />
+            <img
+              src="/assets/DownloadIcon.svg"
+              class="me-3"
+              alt="DownloadIcon"
+            />
             <img src="/assets/ShareIcon.svg" class="me-3" alt="ShareIcon" />
             <img src="/assets/DeleteIcon.svg" class="me-3" alt="DeleteIcon" />
           </div>
@@ -105,23 +127,31 @@
         <div class="flex items-center justify-between">
           <div class="flex items-end">
             <img src="/assets/ExclamationIcon.svg" alt="ExclamationIcon" /><span
-              class="font-medium text-xs text-primaryGreen mx-1"
-              >Appraisal</span
+              class="font-medium text-xs text-primaryGreen mx-1">Appraisal</span
             >
           </div>
-          <div><img src="/assets/FileIcon.svg" alt="FileIcon"/></div>
+          <div><img src="/assets/FileIcon.svg" alt="FileIcon" /></div>
         </div>
         <div class="py-1 px-4">
           <p class="py-1 font-medium text-base text-primaryGreen">
             Schedule Appraisal
           </p><button
             class="bg-[#FAEFC6] text-sm text-primaryGreen font-medium rounded-lg py-2 px-5"
-            >Completed</button>
+            >Completed</button
+          >
         </div>
         <div class="flex items-center justify-between py-3">
           <div class="flex items-center">
-            <img src="/assets/SpectacleIcon.svg" class="me-3" alt="SpectacleIcon"/>
-            <img src="/assets/DownloadIcon.svg" class="me-3" alt="DownloadIcon" />
+            <img
+              src="/assets/SpectacleIcon.svg"
+              class="me-3"
+              alt="SpectacleIcon"
+            />
+            <img
+              src="/assets/DownloadIcon.svg"
+              class="me-3"
+              alt="DownloadIcon"
+            />
             <img src="/assets/ShareIcon.svg" class="me-3" alt="ShareIcon" />
             <img src="/assets/DeleteIcon.svg" class="me-3" alt="DeleteIcon" />
           </div>
@@ -144,12 +174,21 @@
             Title Review
           </p><button
             class="bg-[#FFE0E1] text-sm text-[#DB4F57] font-medium rounded-lg py-2 px-5"
-            >Completed</button>
+            >Completed</button
+          >
         </div>
         <div class="flex items-center justify-between py-3">
           <div class="flex items-center">
-            <img src="/assets/SpectacleIcon.svg" class="me-3" alt="SpectacleIcon" />
-            <img src="/assets/DownloadIcon.svg" class="me-3" alt="DownloadIcon" />
+            <img
+              src="/assets/SpectacleIcon.svg"
+              class="me-3"
+              alt="SpectacleIcon"
+            />
+            <img
+              src="/assets/DownloadIcon.svg"
+              class="me-3"
+              alt="DownloadIcon"
+            />
             <img src="/assets/ShareIcon.svg" class="me-3" alt="ShareIcon" />
             <img src="/assets/DeleteIcon.svg" class="me-3" alt="DeleteIcon" />
           </div>
@@ -163,7 +202,7 @@
 </div>
 
 <style>
-   .home-image-container{
-     background-image: linear-gradient(to bottom, #F5F2E1 50%, white 50%);
-   } 
+  .home-image-container {
+    background-image: linear-gradient(to bottom, #f5f2e1 50%, white 50%);
+  }
 </style>

@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import BloomsdayProduct from "../../images/BloomsdayProduct.png";
+---
+
 <div class="flex items-center justify-center mt-24" id="solutions">
   <div class="w-[80%] px-5">
     <div class="text-center">
@@ -11,11 +16,7 @@
       </p>
     </div>
     <div class="mt-[3.5rem]">
-      <img
-        src="/assets/BloomsdayProduct.png"
-        alt="BloomsdayProduct"
-        class="w-full"
-      />
+      <Image src={BloomsdayProduct} alt="BloomsdayProduct" class="w-full" />
     </div>
     <div class="py-10 font-neueMontreal tracking-wide">
       <div class="flex flex-wrap w-full">

@@ -1,12 +1,24 @@
-<div class="joinCommunityContainer flex items-center justify-center mt-24 pb-5" id="joinCommunity">
-    <div class="w-3/4 relative">
-    <img src="/assets/JoinCommunity.png" alt="JoinCommunity"/>
-    <h5 class="absolute left-[38%] top-[38%] text-center text-5xl text-white  font-neueMontreal" >Join the <br/>Community</h5>
-</div>
+---
+import { Image } from "astro:assets";
+import JoinCommunityImg from "../../images/JoinCommunity.png";
+---
+
+<div
+  class="joinCommunityContainer flex items-center justify-center mt-24 pb-5"
+  id="joinCommunity"
+>
+  <div class="w-3/4 relative">
+    <Image src={JoinCommunityImg} alt="JoinCommunity" />
+    <h5
+      class="absolute left-[38%] top-[38%] text-center text-5xl text-white font-neueMontreal"
+    >
+      Join the <br />Community
+    </h5>
+  </div>
 </div>
 
 <style>
-    .joinCommunityContainer{
-        background-image: linear-gradient(to bottom, white 50%, #F5F2E1 50%);
-    }
+  .joinCommunityContainer {
+    background-image: linear-gradient(to bottom, white 50%, #f5f2e1 50%);
+  }
 </style>

@@ -1,3 +1,11 @@
+---
+import { Image } from "astro:assets";
+import CurrentHomeOwners from "../../images/CurrentHomeOwners.png";
+import BuyWithConfidence from "../../images/BuyWithConfidence.png";
+import SweetHome from "../../images/SweetHome.png";
+import TurningPage from "../../images/TurningPage.png";
+---
+
 <div class="flex items-center justify-center mt-14" id="buyers">
   <div class="w-[80%] px-8">
     <div class="text-center py-5">
@@ -40,7 +48,7 @@
           >
         </div>
         <div class="w-1/2">
-          <img src="/assets/CurrentHomeOwners.png" alt="Frame1" class="" />
+          <Image src={CurrentHomeOwners} alt="Frame1" class="" />
         </div>
       </div>
     </div>
@@ -49,7 +57,7 @@
         class="bg-yellowish p-5 w-full flex justify-between items-center relative"
       >
         <div class="w-1/2">
-          <img src="/assets/BuyWithConfidence.png" alt="Frame2" />
+          <Image src={BuyWithConfidence} alt="Frame2" />
         </div>
         <div class="w-1/2 px-16">
           <span class="font-medium font-breeSerif text-sm"
@@ -96,12 +104,13 @@
           </p>
           <button
             class="border-2 border-primaryGreen border-spacing-5 text-primaryGreen border-solid rounded-md py-2 px-5 font-medium"
-            > <a href="#joinWaitlist"> Join the Waitlist </a></button
+          >
+            <a href="#joinWaitlist"> Join the Waitlist </a></button
           >
         </div>
         <div class="w-1/2">
           <div class="">
-            <img src="/assets/SweetHome.png" alt="Frame3" class="" />
+            <Image src={SweetHome} alt="Frame3" class="" />
           </div>
         </div>
       </div>
@@ -111,7 +120,7 @@
         class="bg-yellowish p-5 w-full flex justify-between items-center relative"
       >
         <div class="w-1/2">
-          <img src="/assets/TurningPage.png" alt="Frame5 " />
+          <Image src={TurningPage} alt="Frame5 " />
         </div>
         <div class="w-1/2 p-16">
           <span class="font-medium font-breeSerif text-sm"
