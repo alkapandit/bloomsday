@@ -26,7 +26,7 @@ function WaitlistPopup({ setWaitlist }) {
                 setWaitlist(false);
               }}
             >
-              <a href="#hero">Return to Home Page</a>
+             Return to Home Page
             </button>
           </div>
         </div>

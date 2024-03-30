@@ -4,10 +4,28 @@ import WaitlistPopup from "./WaitlistPopup";
 function JoinWaitlist() {
   const [waitlist, setWaitlist] = useState(false);
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        setWaitlist(true);
+        myForm.reset();
+      })
+      .catch((error) => alert(error));
+  };
+
   return (
     <div class="font-neueMontreal" id="joinWaitlist">
       <div class="bg-yellowish flex items-center justify-center">
-        <div class="w-3/4  py-10 flex justify-between ">
+        <div class="w-3/4  py-24 flex justify-between ">
           <div class="w-full">
             <div>
               <img
@@ -15,8 +33,8 @@ function JoinWaitlist() {
                 alt="FooterBloomsdayLogo"
               />
             </div>
-            <div class=" ">
-              <h3 class="font-neueMontreal font-medium text-4xl text-primaryGreen py-5">
+            <div class="font-neueMontreal  ">
+              <h3 class="font-normal text-[2.6rem] text-primaryGreen py-5">
                 Apply For the Waitlist
               </h3>
               <p class="w-[58%] tracking-wide">
@@ -28,7 +46,14 @@ function JoinWaitlist() {
               </p>
             </div>
           </div>
-          <form class="">
+          <form
+            class=""
+            data-netlify="true"
+            name="joinWaitlist"
+            method="post"
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="form-name" value="joinWaitlist" />
             <div class="text-sm text-[#476A57] font-medium my-5">
               <label for="full_name">Full Name*</label>
               <input
@@ -63,11 +88,7 @@ function JoinWaitlist() {
             </p>
             <button
               type="submit"
-              class="bg-primaryGreen rounded-md text-white font-medium py-2 px-8 mt-5"
-              onClick={(e) => {
-                e.preventDefault();
-                setWaitlist(true);
-              }}
+              class="bg-primaryGreen rounded-md text-yellowish  font-medium py-2 px-8 mt-5 font-neueMontreal tracking-wide"
             >
               Submit
             </button>
