@@ -96,7 +96,7 @@ function Footer() {
                 </div>
                 <p class="text-[0.6rem] block sm:hidden">
                   By submitting this form, you agree to Bloomsday{" "}
-                  <span class="underline">Privacy Policy</span>
+                  <a href="/privacy" class="underline"> Privacy Policy</a>
                 </p>
               </div>
             </div>

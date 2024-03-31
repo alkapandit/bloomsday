@@ -25,7 +25,7 @@ function JoinWaitlist() {
   return (
     <div class="font-neueMontreal" id="joinWaitlist">
       <div class="bg-yellowish flex items-center justify-center">
-        <div class="w-3/4 sm:w-full  py-24 sm:py-12 sm:px-8 flex  sm:flex-col justify-between sm:justify-center ">
+        <div class="w-3/4 sm:w-full  py-24 sm:py-12 sm:px-9 flex  sm:flex-col justify-between sm:justify-center ">
           <div class="w-full">
             {/* <div>
               <img
@@ -40,7 +40,7 @@ function JoinWaitlist() {
               <h3 class="font-normal text-[2.6rem] sm:text-4xl text-primaryGreen py-5 sm:py-3">
                 Apply For the Waitlist
               </h3>
-              <p class="w-[58%] sm:w-full sm:pt-2 sm:pb-7 tracking-wide">
+              <p class="w-[60%] sm:w-full sm:pt-2 sm:pb-7 tracking-wide">
                 We're currently inviting a select group of homebuyers and agents
                 to test our innovative platform. By entering your email, you'll
                 secure your spot on our waitlist and be among the first to

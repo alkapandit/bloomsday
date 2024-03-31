@@ -4,8 +4,8 @@ import "./style.css";
 function BloomsdayArtAndScience() {
   const [data, setData] = useState(1);
   return (
-    <div class="flex items-center justify-center mt-14 sm:mt-5 ps-5">
-      <div class="w-[80%] sm:w-full sm:px-5">
+    <div class="flex items-center justify-center mt-14 sm:mt-5">
+      <div class="w-[75%] sm:w-full sm:px-9">
         <div class="text-center">
           <p class="py-5 text-sm font-medium font-breeSerif sm:text-lg">
             Embrace Organizational Bliss
@@ -14,12 +14,12 @@ function BloomsdayArtAndScience() {
             Master the Art and Science of Homebuying
           </h3>
         </div>
-        <div class="flex items-center justify-between mt-8">
-          <div class="w-1/2 sm:w-full font-neueMontreal">
+        <div class="grid grid-cols-2 gap-7 pt-12">
+          <div class="col-span-1 sm:col-span-2 sm:w-full font-neueMontreal">
             <div>
               {data !== 1 && (
                 <div
-                  class="flex items-center justify-between cursor-pointer p-5 my-4 rounded-md  myshadow font-semibold text-primaryGreen tracking-[1px]"
+                  class="flex items-center justify-between cursor-pointer p-5 mb-4 rounded-md  myshadow font-semibold text-primaryGreen tracking-[1px]"
                   onClick={() => {
                     setData(1);
                   }}
@@ -133,24 +133,24 @@ function BloomsdayArtAndScience() {
               )}
             </div>
           </div>
-          <div class="w-1/2 p-5 flex justify-center sm:hidden">
+          <div class="col-span-1 sm:col-span-2 sm:hidden">
             {data === 1 && (
               <img
-                class="w-[90%] pb-4"
+                class="w-full"
                 src="/assets/First-Steps-Image.png"
                 alt="First-Steps-Image"
               />
             )}
             {data === 2 && (
               <img
-                class="w-[90%]"
+                class="w-full"
                 src="/assets/Along-the-Path-Image.png"
                 alt="Along-the-Path-Image"
               />
             )}
             {data === 3 && (
               <img
-                class="w-[90%] pt-5"
+                class="w-full"
                 src="/assets/Settling-In-Image.png"
                 alt="Settling-In-Image"
               />
