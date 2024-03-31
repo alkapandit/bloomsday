@@ -1,35 +1,37 @@
 ---
 import { Image } from "astro:assets";
+import GroupHome from "../../images/GroupHome.png";
 import Rectangle19 from "../../images/Rectangle19.png";
 ---
 
 <div class="bg-yellowish flex items-center flex-col" id="hero">
-  <div class="w-3/4 text-center pt-20">
-    <div class="flex flex-col">
-      <p class="pb-7 font-breeSerif">Coming Soon: The Future of Homebuying</p>
-      <h3 class="font-normal text-6xl text-primaryGreen pb-2 font-neueMontreal">
+  <div class="w-3/4 sm:w-full sm:px-6 text-center pt-20 sm:pt-10">
+    <div class="flex flex-col text-center">
+      <p class="pb-7 font-breeSerif sm:text-lg">Coming Soon: The Future of Homebuying</p>
+      <h3 class="font-normal text-6xl sm:text-5xl text-primaryGreen pb-2 sm:pb-5 font-neueMontreal">
         A Simpler Path to Homebuying
       </h3>
-      <span class="font-normal font-neueMontreal tracking-wide"
+      <span class="font-normal font-neueMontreal tracking-wide w-full px-44 sm:px-0"
         >Bloomsday Home is revolutionizing the home journey with an AI-powered
         solution that provides guidance
-        <br />every step of the way—whether a homebuyer is looking for the
+        every step of the way—whether a homebuyer is looking for the
         perfect home or already living in it.</span
       >
       <div class="py-10">
         <button
-          class="text-yellowish  bg-primaryGreen font-medium py-2 px-5 rounded-md font-neueMontreal tracking-wide"
+          class="text-yellowish  bg-primaryGreen font-medium py-2 sm:py-3 px-5 rounded-md font-neueMontreal tracking-wide sm:w-full"
           ><a href="#joinWaitlist"> Join the Waitlist </a></button
         >
       </div>
     </div>
   </div>
 </div>
-<div class="flex justify-center home-image-container">
+<div class="flex justify-center home-image-container pt-10 sm:pt-0">
   <div class="relative flex justify-center">
-    <Image src={Rectangle19} alt="home img" class="w-[65%]" />
+    <Image src={Rectangle19} alt="home img" class="w-[65%] block sm:hidden " />
+    <Image src={GroupHome} alt="home img" class="w-full hidden sm:block" />
     <div
-      class="absolute top-20 left-40 bg-white flex items-center py-2 px-0 text-xs text-primaryGreen font-medium font-neueMontreal"
+      class="absolute top-20 left-40 bg-white flex items-center py-2 px-0 text-xs text-primaryGreen font-medium font-neueMontreal sm:hidden"
     >
       <div class="mx-4">
         <img class="m-auto" src="/assets/TaskIcon.svg" alt="TaskIcon" /><p>
@@ -55,7 +57,7 @@ import Rectangle19 from "../../images/Rectangle19.png";
       </div>
     </div>
     <div
-      class="bg-[#F8F5F1] w-fit p-4 absolute top-52 left-96 font-neueMontreal"
+      class="bg-[#F8F5F1] w-fit p-4 absolute top-52 left-96 font-neueMontreal  sm:hidden"
     >
       <div class="flex items-center mt-2 mb-4">
         <img src="/assets/ReportIcon.svg" alt="ReportIcon" /><span
@@ -85,7 +87,7 @@ import Rectangle19 from "../../images/Rectangle19.png";
         </div>
       </div>
     </div>
-    <div class="absolute -top-14 right-40 font-neueMontreal">
+    <div class="absolute -top-14 right-40 font-neueMontreal  sm:hidden">
       <div class="bg-white py-1 px-2 border-s-4 border-s-secondaryGreen">
         <div class="flex items-center justify-between">
           <div class="flex items-end">

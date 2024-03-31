@@ -1,40 +1,44 @@
 ---
 import { Image } from "astro:assets";
 import CurrentHomeOwners from "../../images/CurrentHomeOwners.png";
+import CurrentHomeOwnersMobile from "../../images/CurrentHomeOwnersMobile.png";
 import BuyWithConfidence from "../../images/BuyWithConfidence.png";
+import BuyWithConfidenceMobile from "../../images/BuyWithConfidenceMobile.png";
 import SweetHome from "../../images/SweetHome.png";
+import SweetHomeMobile from "../../images/SweetHomeMobile.png";
 import TurningPage from "../../images/TurningPage.png";
+import TurningPageMobile from "../../images/TurningPageMobile.png";
 ---
 
 <div class="flex items-center justify-center mt-14" id="buyers">
-  <div class="w-[80%] px-8">
+  <div class="w-[80%] sm:w-full px-8 sm:px-0">
     <div class="text-center py-5">
-      <span class="font-medium font-breeSerif text-sm"
+      <span class="font-medium font-breeSerif text-sm sm:text-lg"
         >Your Home Management Assistant</span
       >
       <h3 class="font-normal font-neueMontreal text-5xl text-primaryGreen my-6">
         What Sets Bloomsday Apart
       </h3>
-      <p class="font-normal">
+      <p class="font-normal sm:px-10">
         Bloomsday is dedicated to empowering you with knowledge and confidence
-        throughout your entire home<br /> journey. Our unique solution supports you
+        throughout your entire home journey. Our unique solution supports you
         from your first steps to long after you've settled in.
       </p>
     </div>
-    <div class="flex items-center py-3 mt-8">
+    <div class="flex items-center py-3 sm:py-2 mt-8">
       <div
-        class="bg-mintGreen p-5 w-full flex justify-between items-center relative"
+        class="bg-mintGreen p-5 sm:p-8 w-full flex sm:flex-col-reverse justify-between sm:justify-center items-center"
       >
-        <div class="w-1/2 px-10">
-          <span class="font-medium font-breeSerif text-sm"
+        <div class="w-1/2 sm:w-full px-10 sm:px-0 ">
+          <span class="font-medium font-breeSerif text-sm sm:text-lg"
             >Step 1: Clarify the complicated.</span
           >
           <h3
-            class="font-normal font-neueMontreal text-4xl text-primaryGreen my-5"
+            class="sm:w-full font-normal font-neueMontreal text-4xl text-primaryGreen my-5"
           >
             Current and Aspiring Homeowners
           </h3>
-          <p class="font-normal font-neueMontreal pb-5 pe-10 tracking-wide">
+          <p class="font-normal font-neueMontreal pb-5 pe-10 sm:pe-0 tracking-wide">
             Step into the world of homebuying with Bloomsday, a haven for future
             homeowners seeking guidance, knowledge, and a serene experience. Our
             zen-inspired approach invites you to explore and master the process
@@ -47,20 +51,22 @@ import TurningPage from "../../images/TurningPage.png";
             ><a href="#joinWaitlist"> Join the Waitlist </a></button
           >
         </div>
-        <div class="w-1/2">
-          <Image src={CurrentHomeOwners} alt="Frame1" class="" />
+        <div class="w-1/2 sm:w-full sm:mb-10">
+          <Image src={CurrentHomeOwners} alt="Frame1" class="block sm:hidden" />
+          <Image src={CurrentHomeOwnersMobile} alt="Frame1" class="hidden sm:block" />
         </div>
       </div>
     </div>
-    <div class="flex items-center py-3">
+    <div class="flex items-center py-3 sm:py-2">
       <div
-        class="bg-yellowish p-5 w-full flex justify-between items-center relative"
+        class="bg-yellowish p-5 sm:p-8 w-full flex sm:flex-col justify-between sm:justify-center items-center"
       >
-        <div class="w-1/2">
-          <Image src={BuyWithConfidence} alt="Frame2" />
+        <div class="w-1/2 sm:w-full sm:pb-10">
+          <Image src={BuyWithConfidence} alt="Frame2" class="block sm:hidden" />
+          <Image src={BuyWithConfidenceMobile} alt="Frame2" class="hidden sm:block"/>
         </div>
-        <div class="w-1/2 px-16">
-          <span class="font-medium font-breeSerif text-sm"
+        <div class="w-1/2 px-16 sm:w-full sm:px-0">
+          <span class="font-medium font-breeSerif text-sm sm:text-lg"
             >Step 2: Act with Clarity and Certainty.</span
           >
           <h3
@@ -83,10 +89,10 @@ import TurningPage from "../../images/TurningPage.png";
         <div></div>
       </div>
     </div>
-    <div class="flex items-center py-3">
-      <div class="bg-mintGreen p-5 w-full flex justify-between items-center">
-        <div class="w-1/2 p-16">
-          <span class="font-medium font-breeSerif text-sm"
+    <div class="flex items-center py-3 sm:py-2">
+      <div class="bg-mintGreen p-5 sm:p-8 w-full flex sm:flex-col-reverse justify-between sm:justify-center items-center">
+        <div class="w-1/2 sm:w-full p-16 sm:p-0">
+          <span class="font-medium font-breeSerif text-sm sm:text-lg"
             >Step 3: Build a Digital Library of Your Home Records</span
           >
           <h3
@@ -108,22 +114,24 @@ import TurningPage from "../../images/TurningPage.png";
             <a href="#joinWaitlist"> Join the Waitlist </a></button
           >
         </div>
-        <div class="w-1/2">
+        <div class="w-1/2 sm:w-full sm:pb-10">
           <div class="">
-            <Image src={SweetHome} alt="Frame3" class="" />
+            <Image src={SweetHome} alt="Frame3" class="block sm:hidden" />
+            <Image src={SweetHomeMobile} alt="Frame3" class="hidden sm:block" />
           </div>
         </div>
       </div>
     </div>
-    <div class="flex items-center py-3">
+    <div class="flex items-center py-3 sm:pb-0">
       <div
-        class="bg-yellowish p-5 w-full flex justify-between items-center relative"
+        class="bg-yellowish p-5 sm:p-8 w-full flex sm:flex-col justify-between sm:justify-center items-center relative"
       >
-        <div class="w-1/2">
-          <Image src={TurningPage} alt="Frame5 " />
+        <div class="w-1/2 sm:w-full sm:pb-10">
+          <Image src={TurningPage} alt="Frame5 " class="block sm:hidden"/>
+          <Image src={TurningPageMobile} alt="Frame5 " class="hidden sm:block" />
         </div>
-        <div class="w-1/2 p-16">
-          <span class="font-medium font-breeSerif text-sm"
+        <div class="w-1/2 p-16 sm:w-full sm:p-0">
+          <span class="font-medium font-breeSerif text-sm sm:text-lg"
             >Beyond: Every Home Has a Story</span
           >
           <h3

@@ -3,7 +3,8 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     screens: {
-      sm: { min: "640px", max: "767px" },
+      sm: { max: "767px" },
+      md: { min: "768px" },
     },
     extend: {
       colors: {

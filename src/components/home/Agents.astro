@@ -3,20 +3,20 @@ import { Image } from "astro:assets";
 import Frame6 from "../../images/Frame6.png";
 ---
 
-<div class="flex items-center justify-center mt-28">
+<div class="flex items-center justify-center mt-28 sm:mt-0" id="agent">
   <div
-    class="w-3/4 grid grid-cols-8 bg-gradient-to-r from-primaryGreen from-75% to-white to-75%"
+    class="w-3/4 sm:w-full grid sm:flex sm:flex-col-reverse grid-cols-8 bg-gradient-to-r from-primaryGreen from-75% sm:from-100% to-white to-75%"
   >
     <div
-      class="text-yellowish p-14 mt-10 col-span-5 flex flex-col justify-center"
+      class="text-yellowish p-14 sm:p-8 mt-10 sm:mt-0 col-span-5 flex flex-col justify-center"
     >
-      <span class="font-medium text-sm font-breeSerif"
+      <span class="font-medium text-lg font-breeSerif"
         >Delight Your Clients</span
       >
       <h3 class="font-normal font-neueMontreal text-3xl my-5">
         Added Value for Forever Clients
       </h3>
-      <p class="font-neueMontreal pe-10 font-normal tracking-wide">
+      <p class="font-neueMontreal pe-10 sm:pe-0 sm:text-sm font-normal tracking-wide">
         Bloomsday partners with likeminded agents to provide a white glove
         service to their valued clients. Our client-facing platform is intended
         to supplement, not replace, agents’ internal software, so there is no
@@ -25,15 +25,15 @@ import Frame6 from "../../images/Frame6.png";
       </p>
       <a
         href="mailto:agents@bloomsdayhome.com?subject=Agent Inquiry"
-        class="font-medium font-neueMontreal w-fit border border-spacing-2 border-white py-2 px-5 rounded-md my-7"
+        class="font-medium font-neueMontreal sm:text-sm w-fit border border-spacing-2 border-white py-2 px-5 rounded-md my-7"
         >Email Us to Learn How Bloomsday Helps Agents</a
       >
     </div>
-    <div class="col-span-3 relative">
+    <div class="col-span-3 relative sm:p-8">
       <Image
         src={Frame6}
         alt="Frame6"
-        class="w-full h-full object-cover object-top -translate-y-[15%] absolute top-0 left-0"
+        class="w-full h-full sm:h-[300px] object-cover object-top md:-translate-y-[15%] absolute sm:relative md:top-0 md:left-0"
       />
     </div>
   </div>
