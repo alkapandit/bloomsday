@@ -42,13 +42,13 @@ function Footer() {
                   />
                 </div>
                 <div class="text-sm w-2/4 flex items-center justify-end text-yellowish font-medium ">
-                  <span class="me-20 underline font-neueMontreal tracking-wide font-semibold text-[0.813rem]">
+                  <span class="me-20 underline font-neueMontreal tracking-[0.5px] font-semibold text-[0.813rem]">
                     {" "}
                     <a href="mailto:dolly@bloomsdayhome.com?subject=General Enquiry">
-                      Contect Us Via Email
+                      Contact Us Via Email
                     </a>
                   </span>
-                  <span class="">Headquartered in Denver, CO</span>
+                  <span class="font-neueMontreal tracking-[0.5px] font-semibold text-[0.813rem]">Headquartered in Denver, CO</span>
                 </div>
               </div>
             </div>
@@ -102,10 +102,10 @@ function Footer() {
             <div class="w-[88%] text-yellowish flex justify-between ">
               <div class=" w-2/4">
                 <div class="pb-4">
-                  <span class="me-8 underline ">
+                  <span class="me-8 underline font-neueMontreal tracking-[0.5px] text-[0.813rem] ">
                     <a href="/privacy">Privacy</a>
                   </span>
-                  <span class="underline">
+                  <span class="underline font-neueMontreal tracking-[0.5px] text-[0.813rem]">
                     <a href="/terms">Terms</a>
                   </span>
                 </div>
