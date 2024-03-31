@@ -34,7 +34,9 @@ function JoinWaitlist() {
               />
             </div> */}
             <div class="font-neueMontreal  ">
-              <span class="text-lg font-breeSerif font-medium hidden sm:block">Join the Community</span>
+              <span class="text-lg font-breeSerif font-medium hidden sm:block">
+                Join the Community
+              </span>
               <h3 class="font-normal text-[2.6rem] sm:text-4xl text-primaryGreen py-5 sm:py-3">
                 Apply For the Waitlist
               </h3>
@@ -61,7 +63,7 @@ function JoinWaitlist() {
                 type="text"
                 id="full_name"
                 name="full_name"
-                class="w-[28rem] sm:w-full p-2 rounded-md mt-1"
+                class="w-[28rem] sm:w-full py-3 px-5 sm:px-2 rounded-md mt-1"
               />
             </div>
             <div class="text-sm text-[#476A57] font-medium my-5">
@@ -70,7 +72,7 @@ function JoinWaitlist() {
                 type="text"
                 id="email"
                 name="email"
-                class="w-[28rem]  sm:w-full p-2 rounded-md mt-1"
+                class="w-[28rem]  sm:w-full py-3 px-5 sm:px-2 rounded-md mt-1"
               />
             </div>
             <div class="text-sm text-[#476A57] font-medium my-5">
@@ -78,7 +80,7 @@ function JoinWaitlist() {
               <select
                 id="customer_type"
                 name="customer_type"
-                class="w-[28rem] sm:w-full py-2 px-5 sm:px-2 rounded-md border-0 outline-none text-[#476A57]"
+                class="w-[28rem] sm:w-full py-3 px-5 sm:px-2 rounded-md border-0 outline-none text-[#476A57]"
               >
                 <option class="bg-mintGreen">Select</option>
                 <option class="bg-mintGreen">I am a Homebuyer</option>

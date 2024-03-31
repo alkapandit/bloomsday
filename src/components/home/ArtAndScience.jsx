@@ -4,7 +4,7 @@ import "./style.css";
 function BloomsdayArtAndScience() {
   const [data, setData] = useState(1);
   return (
-    <div class="flex items-center justify-center mt-14 ps-5">
+    <div class="flex items-center justify-center mt-14 sm:mt-5 ps-5">
       <div class="w-[80%] sm:w-full sm:px-5">
         <div class="text-center">
           <p class="py-5 text-sm font-medium font-breeSerif sm:text-lg">
