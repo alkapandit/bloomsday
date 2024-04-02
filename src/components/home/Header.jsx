@@ -6,7 +6,7 @@ function Header() {
     setNavOptionsActive(false);
   };
   return (
-    <div class="sm:w-full bg-yellowish relative">
+    <div class="sm:w-full bg-yellowish sticky  top-0 w-full z-30">
       <div class="border-b border-lightGreen px-20 sm:px-5">
         <div class="flex items-center py-4 justify-between">
           <a href="/" class="flex items-center cursor-pointer">

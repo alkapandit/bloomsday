@@ -63,7 +63,7 @@ function JoinWaitlist() {
                 type="text"
                 id="full_name"
                 name="full_name"
-                class="w-[28rem] sm:w-full py-3 px-5 sm:px-2 rounded-md mt-1"
+                class="w-[28rem] sm:w-full py-3 px-[20px] sm:px-3 rounded-md mt-1 outline-none"
               />
             </div>
             <div class="text-sm text-[#476A57] font-medium my-5">
@@ -72,7 +72,7 @@ function JoinWaitlist() {
                 type="text"
                 id="email"
                 name="email"
-                class="w-[28rem]  sm:w-full py-3 px-5 sm:px-2 rounded-md mt-1"
+                class="w-[28rem]  sm:w-full py-3 px-[20px] sm:px-3 rounded-md mt-1 outline-none"
               />
             </div>
             <div class="text-sm text-[#476A57] font-medium my-5">
@@ -80,7 +80,7 @@ function JoinWaitlist() {
               <select
                 id="customer_type"
                 name="customer_type"
-                class="w-[28rem] sm:w-full py-3 px-5 sm:px-2 rounded-md border-0 outline-none text-[#476A57]"
+                class="w-[28rem] sm:w-full py-3 px-4 sm:px-2 rounded-md border-0 outline-none text-[#476A57] bg-white"
               >
                 <option class="bg-mintGreen">Select</option>
                 <option class="bg-mintGreen">I am a Homebuyer</option>
