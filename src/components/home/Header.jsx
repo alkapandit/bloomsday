@@ -30,7 +30,7 @@ function Header() {
               </li>
             </ul>
             <button class="py-2 px-5 bg-primaryGreen text-yellowish font-neueMontreal tracking-wide font-medium rounded-md mx-4">
-              <a href="/#joinWaitlist">Join the waitlist</a>
+              <a href="/#joinWaitlist">Join the Waitlist</a>
             </button>
           </div>
           <div
@@ -39,7 +39,7 @@ function Header() {
               setNavOptionsActive(true);
             }}
           >
-            <img src="/assets/HamburgerIcon.svg" class="w-8" />
+            <img src="/assets/HamburgerIcon.svg" class="w-8" alt="Menu" />
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@ function Header() {
             </div>
             <button class="w-full mt-12 mb-3 py-2 px-5 bg-primaryGreen text-yellowish font-neueMontreal tracking-wide font-medium rounded-md">
               <a href="/#joinWaitlist" onClick={closeNav}>
-                Join the waitlist
+                Join the Waitlist
               </a>
             </button>
           </div>
