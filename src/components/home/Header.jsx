@@ -11,11 +11,7 @@ function Header() {
         <div class="flex items-center py-4 justify-between">
           <a href="/" class="flex items-center cursor-pointer">
             <img src="/assets/BloomsdayLogo.svg" alt="Bloomsday Logo" />
-            <img
-              src="/assets/BloomsdayTextIcon.svg"
-              alt="Bloomsday Text"
-              class="mx-2"
-            />
+            <img src="/assets/BloomsdayTextIcon.svg" alt="Bloomsday Text" class="mx-2" />
           </a>
           <div class="flex items-center sm:hidden">
             <ul class="flex items-center justify-between text-primaryGreen font-medium font-neueMontreal">
@@ -26,7 +22,7 @@ function Header() {
                 <a href="/#buyers">Homebuyers</a>
               </li>
               <li class="mx-5 cursor-pointer">
-                <a href="/#joinCommunity">Agents</a>
+                <a href="/#agent">Agents</a>
               </li>
             </ul>
             <button class="py-2 px-5 bg-primaryGreen text-yellowish font-neueMontreal tracking-wide font-medium rounded-md mx-4">
@@ -50,11 +46,7 @@ function Header() {
               <div class="flex items-center justify-between px-5">
                 <a href="/" class="flex items-center cursor-pointer">
                   <img src="/assets/BloomsdayLogo.svg" alt="Bloomsday Logo" />
-                  <img
-                    src="/assets/BloomsdayTextIcon.svg"
-                    alt="Bloomsday Text"
-                    class="mx-2"
-                  />
+                  <img src="/assets/BloomsdayTextIcon.svg" alt="Bloomsday Text" class="mx-2" />
                 </a>
                 <div class="cursor-pointer" onClick={closeNav}>
                   <img src="/assets/CloseIcon.svg" class="w-8" />

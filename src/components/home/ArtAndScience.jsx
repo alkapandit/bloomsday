@@ -7,7 +7,7 @@ function BloomsdayArtAndScience() {
     <div class="flex items-center justify-center mt-14 sm:mt-5">
       <div class="w-[75%] sm:w-full sm:px-9">
         <div class="text-center">
-          <p class="py-5 text-sm font-medium font-breeSerif sm:text-lg">
+          <p class="py-5 font-medium font-breeSerif sm:text-lg">
             Embrace Organizational Bliss
           </p>
           <h3 class="font-normal font-neueMontreal text-primaryGreen text-5xl">
@@ -45,7 +45,7 @@ function BloomsdayArtAndScience() {
                         alt="First-Steps-Image"
                       />
                       <p>
-                        Bloomsday Home transforms the dream of homeownership
+                        Bloomsday transforms the dream of homeownership
                         into a serene reality by providing clarity, education,
                         and organization before you embark on your home journey.
                         Understanding the process dispels stress, enabling you
@@ -84,7 +84,7 @@ function BloomsdayArtAndScience() {
                         src="/assets/Along-the-Path-Image.png"
                         alt="First-Steps-Image"
                       />
-                      Bloomsday Home is here to help you avoid unexpected
+                      Bloomsday is here to help you avoid unexpected
                       hurdles by offering a 5-step home-buying checklist and
                       effortless document management to keep you organized and
                       on top of all the essential paperwork, ensuring a smooth
@@ -102,7 +102,7 @@ function BloomsdayArtAndScience() {
                     setData(3);
                   }}
                 >
-                  <span class="text-xl">Setting In</span>{" "}
+                  <span class="text-xl">Settling In</span>{" "}
                   <img src="/assets/CloseArrowIcon.svg" alt="CloseArrowIcon" />
                 </div>
               )}
@@ -110,7 +110,7 @@ function BloomsdayArtAndScience() {
                 <div class="rounded-md myshadow py-5 px-5">
                   <div>
                     <div class="flex items-center justify-between cursor-pointer pb-3 font-semibold text-primaryGreen tracking-[1px]">
-                      <span class="text-xl">Setting In</span>{" "}
+                      <span class="text-xl">Settling In</span>{" "}
                       <img
                         src="/assets/CloseArrowIcon.svg"
                         alt="CloseArrowIcon"
@@ -122,8 +122,8 @@ function BloomsdayArtAndScience() {
                         src="/assets/Settling-In-Image.png"
                         alt="First-Steps-Image"
                       />
-                      Bloomsday Home's commitment extends beyond your move-in
-                      date. Our secure document management system create a
+                      Bloomsday's commitment extends beyond your move-in
+                      date. Our secure document management system creates a
                       personalized hub for managing your home's on-going records
                       and essential documents keeping your home management in
                       one secure place.
